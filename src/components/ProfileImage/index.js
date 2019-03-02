@@ -23,7 +23,7 @@ function ProfileImage({ src, icon, size = "x4", ...rest }) {
       ) : (
         <div className="loading"><span>Loading...</span></div>
       )}
-      {!icon && <div className="icon">{icon || <Icon type="plus" />}</div>}
+      {icon && <div className="icon">{icon || <Icon type="plus" />}</div>}
     </div>
   );
 }
